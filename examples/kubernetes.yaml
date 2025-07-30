@@ -70,7 +70,7 @@ spec:
         - name: script-exporter
           image: ricoberger/script_exporter:v2.1.1
           args:
-            - -config.file=/etc/script_exporter/config.yaml
+            - --config.files=/etc/script_exporter/config.yaml
           ports:
             - name: http
               containerPort: 9469
