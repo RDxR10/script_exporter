@@ -15,7 +15,7 @@ make build
 An example configuration can be found in the [examples](./examples) folder. To use this configuration run the following command:
 
 ```sh
-./bin/script_exporter -config.file ./examples/config.yaml
+./bin/script_exporter --config.files ./examples/config.yaml
 ```
 
 Then visit [http://localhost:9469](http://localhost:9469) in the browser of your choice. There you have access to the following examples:
