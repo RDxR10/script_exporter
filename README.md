@@ -35,16 +35,14 @@ The script_exporter is configured via a configuration file and command-line flag
 
 ```
 Usage of ./bin/script_exporter:
-  -config.file file
+  --config.files file
     	Configuration file in YAML format. (default "config.yaml")
-  -create-token
-    	Create bearer token for authentication.
-  -timeout-offset seconds
+  --script.timeout-offset=0.5
         Offset to subtract from Prometheus-supplied timeout in seconds. (default 0.5)
-  -version
+  --version
     	Show version information.
-  -web.listen-address string
-    	Address to listen on for web interface and telemetry. (default ":9469")
+  --web.listen-address=:9469
+    	Addresses on which to expose metrics and web interface. Repeatable for multiple addresses. Examples: `:9100` or `[::1]:9100` for http, `vsock://:9100` for vsock
 ```
 
 The configuration file is written in YAML format, defined by the scheme described below.
